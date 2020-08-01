@@ -1,7 +1,0 @@
-Running: xsim.dir/AWS_aes_top_tb_behav/xsimk.exe -simmode gui -wdb AWS_aes_top_tb_behav.wdb -simrunnum 0 -socket 51680
-Design successfully loaded
-Design Loading Memory Usage: 9368 KB (Peak: 9368 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 16588 KB (Peak: 16588 KB)
-Simulation CPU Usage: 1577 ms
