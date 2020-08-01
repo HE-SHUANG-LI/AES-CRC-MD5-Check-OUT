@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AWS_aes_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AWS_aes_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="302534000000fs"></ZoomStartTime>
+      <ZoomEndTime time="305628000001fs"></ZoomEndTime>
+      <Cursor1Time time="304624000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="177"></NameColumnWidth>
+      <ValueColumnWidth column_width="152"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="74" />
+   <wvobject fp_name="/AWS_aes_top_tb/ad_data_in" type="array">
+      <obj_property name="ElementShortName">ad_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ad_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/ADC_EN_N" type="logic">
+      <obj_property name="ElementShortName">ADC_EN_N</obj_property>
+      <obj_property name="ObjectShortName">ADC_EN_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/ADC_CLK" type="logic">
+      <obj_property name="ElementShortName">ADC_CLK</obj_property>
+      <obj_property name="ObjectShortName">ADC_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/led_en" type="logic">
+      <obj_property name="ElementShortName">led_en</obj_property>
+      <obj_property name="ObjectShortName">led_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/clka_0" type="logic">
+      <obj_property name="ElementShortName">clka_0</obj_property>
+      <obj_property name="ObjectShortName">clka_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/I_qspi_clk" type="logic">
+      <obj_property name="ElementShortName">I_qspi_clk</obj_property>
+      <obj_property name="ObjectShortName">I_qspi_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/I_qspi_cs" type="logic">
+      <obj_property name="ElementShortName">I_qspi_cs</obj_property>
+      <obj_property name="ObjectShortName">I_qspi_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io0" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io0</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io1" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io1</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io2" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io2</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io3" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io3</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io0_out_en" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io0_out_en</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io0_out_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io1_out_en" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io1_out_en</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io1_out_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io2_out_en" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io2_out_en</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io2_out_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/R_qspi_io3_out_en" type="logic">
+      <obj_property name="ElementShortName">R_qspi_io3_out_en</obj_property>
+      <obj_property name="ObjectShortName">R_qspi_io3_out_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/I_qspi_clk_d" type="logic">
+      <obj_property name="ElementShortName">I_qspi_clk_d</obj_property>
+      <obj_property name="ObjectShortName">I_qspi_clk_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/IO_qspi_io0" type="logic">
+      <obj_property name="ElementShortName">IO_qspi_io0</obj_property>
+      <obj_property name="ObjectShortName">IO_qspi_io0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/IO_qspi_io1" type="logic">
+      <obj_property name="ElementShortName">IO_qspi_io1</obj_property>
+      <obj_property name="ObjectShortName">IO_qspi_io1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/IO_qspi_io2" type="logic">
+      <obj_property name="ElementShortName">IO_qspi_io2</obj_property>
+      <obj_property name="ObjectShortName">IO_qspi_io2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/IO_qspi_io3" type="logic">
+      <obj_property name="ElementShortName">IO_qspi_io3</obj_property>
+      <obj_property name="ObjectShortName">IO_qspi_io3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/ram_ena" type="logic">
+      <obj_property name="ElementShortName">ram_ena</obj_property>
+      <obj_property name="ObjectShortName">ram_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/key_bus" type="array">
+      <obj_property name="ElementShortName">key_bus[3:0]</obj_property>
+      <obj_property name="ObjectShortName">key_bus[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/k" type="array">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/temp" type="array">
+      <obj_property name="ElementShortName">temp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/ram_data_width" type="array">
+      <obj_property name="ElementShortName">ram_data_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_data_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/ram_addr_width" type="array">
+      <obj_property name="ElementShortName">ram_addr_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/ld" type="logic">
+      <obj_property name="ElementShortName">ld</obj_property>
+      <obj_property name="ObjectShortName">ld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/key" type="array">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/text_in" type="array">
+      <obj_property name="ElementShortName">text_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">text_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/text_out" type="array">
+      <obj_property name="ElementShortName">text_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">text_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/addra" type="array">
+      <obj_property name="ElementShortName">addra[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/dina" type="array">
+      <obj_property name="ElementShortName">dina[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/ld_r" type="logic">
+      <obj_property name="ElementShortName">ld_r</obj_property>
+      <obj_property name="ObjectShortName">ld_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/dcnt" type="array">
+      <obj_property name="ElementShortName">dcnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dcnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/douta" type="array">
+      <obj_property name="ElementShortName">douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/clkb" type="logic">
+      <obj_property name="ElementShortName">clkb</obj_property>
+      <obj_property name="ObjectShortName">clkb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/web" type="array">
+      <obj_property name="ElementShortName">web[0:0]</obj_property>
+      <obj_property name="ObjectShortName">web[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/blk_mem_gen_0_inst/dinb" type="array">
+      <obj_property name="ElementShortName">dinb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dinb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/aes_done" type="logic">
+      <obj_property name="ElementShortName">aes_done</obj_property>
+      <obj_property name="ObjectShortName">aes_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/ram_128text_in" type="array">
+      <obj_property name="ElementShortName">ram_128text_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_128text_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/aes_cipher_top_inst/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/ram_write_en" type="logic">
+      <obj_property name="ElementShortName">ram_write_en</obj_property>
+      <obj_property name="ObjectShortName">ram_write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/ram_addr" type="array">
+      <obj_property name="ElementShortName">ram_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/ram_data" type="array">
+      <obj_property name="ElementShortName">ram_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/count" type="array">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/count1" type="array">
+      <obj_property name="ElementShortName">count1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data0" type="array">
+      <obj_property name="ElementShortName">data0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data1" type="array">
+      <obj_property name="ElementShortName">data1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data2" type="array">
+      <obj_property name="ElementShortName">data2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data3" type="array">
+      <obj_property name="ElementShortName">data3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data4" type="array">
+      <obj_property name="ElementShortName">data4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data5" type="array">
+      <obj_property name="ElementShortName">data5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data6" type="array">
+      <obj_property name="ElementShortName">data6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data7" type="array">
+      <obj_property name="ElementShortName">data7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data8" type="array">
+      <obj_property name="ElementShortName">data8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data8[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data9" type="array">
+      <obj_property name="ElementShortName">data9[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data9[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data10" type="array">
+      <obj_property name="ElementShortName">data10[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data10[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data11" type="array">
+      <obj_property name="ElementShortName">data11[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data11[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data12" type="array">
+      <obj_property name="ElementShortName">data12[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data12[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data13" type="array">
+      <obj_property name="ElementShortName">data13[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data13[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data14" type="array">
+      <obj_property name="ElementShortName">data14[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data14[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWS_aes_top_tb/AWS_aes_top_dut/ram_count_inst/data15" type="array">
+      <obj_property name="ElementShortName">data15[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data15[7:0]</obj_property>
+   </wvobject>
+</wave_config>

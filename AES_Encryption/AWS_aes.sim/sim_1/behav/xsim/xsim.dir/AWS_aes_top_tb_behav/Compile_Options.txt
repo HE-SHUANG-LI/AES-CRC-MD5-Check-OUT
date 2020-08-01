@@ -1,0 +1,1 @@
+-wto "94413ddf38c945fc9ff03aa0f06a71bf" --incr --debug "typical" --relax --mt "2" -L "blk_mem_gen_v8_4_2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "AWS_aes_top_tb_behav" "xil_defaultlib.AWS_aes_top_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

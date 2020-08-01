@@ -1,0 +1,645 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 13:03:05 2020
+# Process ID: 4912
+# Current directory: G:/aes/AWS_aes.runs/impl_1
+# Command line: vivado.exe -log AWS_aes_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AWS_aes_top.tcl -notrace
+# Log file: G:/aes/AWS_aes.runs/impl_1/AWS_aes_top.vdi
+# Journal file: G:/aes/AWS_aes.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AWS_aes_top.tcl -notrace
+Command: link_design -top AWS_aes_top -part xc7s15ftgb196-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'g:/aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1.dcp' for cell 'blk_mem_gen_1_inst'
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [g:/aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'light_sensor_inst/clk_wiz_0_inst/inst'
+Finished Parsing XDC File [g:/aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'light_sensor_inst/clk_wiz_0_inst/inst'
+Parsing XDC File [g:/aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'light_sensor_inst/clk_wiz_0_inst/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [g:/aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [g:/aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1131.352 ; gain = 453.934
+Finished Parsing XDC File [g:/aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'light_sensor_inst/clk_wiz_0_inst/inst'
+Parsing XDC File [G:/aes/AWS_aes.srcs/constrs_1/new/AWS_aes.xdc]
+Finished Parsing XDC File [G:/aes/AWS_aes.srcs/constrs_1/new/AWS_aes.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1131.352 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1131.352 ; gain = 755.520
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s15'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.653 . Memory (MB): peak = 1131.352 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1ae2ac607
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1148.215 ; gain = 16.863
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1e7413699
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1231.879 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1e7413699
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1231.879 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1d5e68270
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1231.879 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 2 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG light_sensor_inst/clk_wiz_0_inst/inst/clk_out1_clk_wiz_0_BUFG_inst to drive 0 load(s) on clock net light_sensor_inst/clk_wiz_0_inst/inst/clk_out1_clk_wiz_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG light_sensor_inst/clk_wiz_0_inst/inst/clk_out2_clk_wiz_0_BUFG_inst to drive 0 load(s) on clock net light_sensor_inst/clk_wiz_0_inst/inst/clk_out2_clk_wiz_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG light_sensor_inst/clk_wiz_0_inst/inst/clk_out3_clk_wiz_0_BUFG_inst to drive 0 load(s) on clock net light_sensor_inst/clk_wiz_0_inst/inst/clk_out3_clk_wiz_0_BUFG
+INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 1b3e20c1e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1231.879 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1293a9cdd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1231.879 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 14193e1ee
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1231.879 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               1  |               2  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1231.879 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 15fc45e07
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1231.879 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.433 | TNS=-13.840 |
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 12 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 4 Total Ports: 24
+Number of Flops added for Enable Generation: 1
+
+Ending PowerOpt Patch Enables Task | Checksum: 165448efb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 165448efb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 159.457
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-194] Inserted BUFG light_sensor_inst/clk_wiz_0_inst/inst/clk_out1_clk_wiz_0_BUFG_inst to drive 0 load(s) on clock net light_sensor_inst/clk_wiz_0_inst/inst/clk_out1_clk_wiz_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG light_sensor_inst/clk_wiz_0_inst/inst/clk_out2_clk_wiz_0_BUFG_inst to drive 0 load(s) on clock net light_sensor_inst/clk_wiz_0_inst/inst/clk_out2_clk_wiz_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG light_sensor_inst/clk_wiz_0_inst/inst/clk_out3_clk_wiz_0_BUFG_inst to drive 0 load(s) on clock net light_sensor_inst/clk_wiz_0_inst/inst/clk_out3_clk_wiz_0_BUFG
+INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
+Ending Logic Optimization Task | Checksum: 1477c76c1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1477c76c1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.983 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1477c76c1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'G:/aes/AWS_aes.runs/impl_1/AWS_aes_top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file AWS_aes_top_drc_opted.rpt -pb AWS_aes_top_drc_opted.pb -rpx AWS_aes_top_drc_opted.rpx
+Command: report_drc -file AWS_aes_top_drc_opted.rpt -pb AWS_aes_top_drc_opted.pb -rpx AWS_aes_top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file G:/aes/AWS_aes.runs/impl_1/AWS_aes_top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[10] (net: aes_cipher_top_inst/u0/r0_n_1) which is driven by a register (key_128test_inst/key_data_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[10] (net: aes_cipher_top_inst/u0/r0_n_1) which is driven by a register (light_sensor_inst/ad_drive_inst/data128_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[10] (net: aes_cipher_top_inst/u0/r0_n_1) which is driven by a register (light_sensor_inst/ad_drive_inst/en3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[11] (net: aes_cipher_top_inst/u0/r0_n_0) which is driven by a register (key_128test_inst/key_data_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[11] (net: aes_cipher_top_inst/u0/r0_n_0) which is driven by a register (light_sensor_inst/ad_drive_inst/data128_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[11] (net: aes_cipher_top_inst/u0/r0_n_0) which is driven by a register (light_sensor_inst/ad_drive_inst/en3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[5] (net: aes_cipher_top_inst/u0/r0_n_6) which is driven by a register (key_128test_inst/key_data_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[5] (net: aes_cipher_top_inst/u0/r0_n_6) which is driven by a register (light_sensor_inst/ad_drive_inst/data128_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[6] (net: aes_cipher_top_inst/u0/r0_n_5) which is driven by a register (key_128test_inst/key_data_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[6] (net: aes_cipher_top_inst/u0/r0_n_5) which is driven by a register (light_sensor_inst/ad_drive_inst/data128_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[6] (net: aes_cipher_top_inst/u0/r0_n_5) which is driven by a register (light_sensor_inst/ad_drive_inst/en3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[7] (net: aes_cipher_top_inst/u0/r0_n_4) which is driven by a register (key_128test_inst/key_data_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[7] (net: aes_cipher_top_inst/u0/r0_n_4) which is driven by a register (light_sensor_inst/ad_drive_inst/data128_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[7] (net: aes_cipher_top_inst/u0/r0_n_4) which is driven by a register (light_sensor_inst/ad_drive_inst/en3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[8] (net: aes_cipher_top_inst/u0/r0_n_3) which is driven by a register (key_128test_inst/key_data_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[8] (net: aes_cipher_top_inst/u0/r0_n_3) which is driven by a register (light_sensor_inst/ad_drive_inst/data128_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[8] (net: aes_cipher_top_inst/u0/r0_n_3) which is driven by a register (light_sensor_inst/ad_drive_inst/en3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[9] (net: aes_cipher_top_inst/u0/r0_n_2) which is driven by a register (key_128test_inst/key_data_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[9] (net: aes_cipher_top_inst/u0/r0_n_2) which is driven by a register (light_sensor_inst/ad_drive_inst/data128_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 aes_cipher_top_inst/u0/w_reg[3]_rep_bsel has an input control pin aes_cipher_top_inst/u0/w_reg[3]_rep_bsel/ADDRARDADDR[9] (net: aes_cipher_top_inst/u0/r0_n_2) which is driven by a register (light_sensor_inst/ad_drive_inst/en3_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 121101c29
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	I_qspi_clk_IBUF_inst (IBUF.O) is locked to IOB_X0Y21
+	I_qspi_clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 11f7f09b2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.249 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 12b3364f9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.451 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 12b3364f9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.454 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 12b3364f9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.456 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 212675802
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.541 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           5  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 14143e816
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1a7a07564
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1a7a07564
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1da9dd2f4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1a9137973
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 19cfde843
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1d44fcb96
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 18dd8991d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: e370d6a4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1aa94bb5b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1253c63be
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1253c63be
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 144ed0bfb
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 144ed0bfb
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.031. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 124ba9eb5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 124ba9eb5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 124ba9eb5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 124ba9eb5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1783c484e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1783c484e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Ending Placer Task | Checksum: e2f2d129
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+72 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'G:/aes/AWS_aes.runs/impl_1/AWS_aes_top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file AWS_aes_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file AWS_aes_top_utilization_placed.rpt -pb AWS_aes_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file AWS_aes_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s15'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	I_qspi_clk_IBUF_inst (IBUF.O) is locked to IOB_X0Y21
+	I_qspi_clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 29892142 ConstDB: 0 ShapeSum: b969afe7 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: e918dadc
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 298b6c27 NumContArr: bf8d6eb5 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: e918dadc
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: e918dadc
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: e918dadc
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 14e86db8a
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.168  | TNS=0.000  | WHS=-0.161 | THS=-10.504|
+
+Phase 2 Router Initialization | Checksum: 6b940806
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 13c11d333
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 146
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.130 | TNS=-0.749 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1584dd5a1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.156 | TNS=-0.715 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1f7ef2a57
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1f7ef2a57
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1cec184a7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.130 | TNS=-0.749 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 207f4dd8b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 207f4dd8b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 207f4dd8b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 13f91dd20
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.130 | TNS=-0.749 | WHS=0.103  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 13f91dd20
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 13f91dd20
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.64157 %
+  Global Horizontal Routing Utilization  = 1.93382 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 42.3423%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 32.4324%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 32.3529%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 166e03499
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 166e03499
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 12280ab64
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.130 | TNS=-0.749 | WHS=0.103  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 12280ab64
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.336 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+90 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1391.336 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1391.336 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'G:/aes/AWS_aes.runs/impl_1/AWS_aes_top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file AWS_aes_top_drc_routed.rpt -pb AWS_aes_top_drc_routed.pb -rpx AWS_aes_top_drc_routed.rpx
+Command: report_drc -file AWS_aes_top_drc_routed.rpt -pb AWS_aes_top_drc_routed.pb -rpx AWS_aes_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file G:/aes/AWS_aes.runs/impl_1/AWS_aes_top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file AWS_aes_top_methodology_drc_routed.rpt -pb AWS_aes_top_methodology_drc_routed.pb -rpx AWS_aes_top_methodology_drc_routed.rpx
+Command: report_methodology -file AWS_aes_top_methodology_drc_routed.rpt -pb AWS_aes_top_methodology_drc_routed.pb -rpx AWS_aes_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file G:/aes/AWS_aes.runs/impl_1/AWS_aes_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file AWS_aes_top_power_routed.rpt -pb AWS_aes_top_power_summary_routed.pb -rpx AWS_aes_top_power_routed.rpx
+Command: report_power -file AWS_aes_top_power_routed.rpt -pb AWS_aes_top_power_summary_routed.pb -rpx AWS_aes_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+102 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file AWS_aes_top_route_status.rpt -pb AWS_aes_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file AWS_aes_top_timing_summary_routed.rpt -pb AWS_aes_top_timing_summary_routed.pb -rpx AWS_aes_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file AWS_aes_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file AWS_aes_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file AWS_aes_top_bus_skew_routed.rpt -pb AWS_aes_top_bus_skew_routed.pb -rpx AWS_aes_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 13:03:50 2020...

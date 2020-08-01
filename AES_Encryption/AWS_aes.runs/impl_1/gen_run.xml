@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1596258093">
+  <File Type="PA-TCL" Name="AWS_aes_top.tcl"/>
+  <File Type="BITSTR-BMM" Name="AWS_aes_top_bd.bmm"/>
+  <File Type="REPORTS-TCL" Name="AWS_aes_top_reports.tcl"/>
+  <File Type="OPT-DCP" Name="AWS_aes_top_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="AWS_aes_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="AWS_aes_top_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="AWS_aes_top_placed.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="AWS_aes_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="AWS_aes_top.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="AWS_aes_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="AWS_aes_top.bin"/>
+  <File Type="PHYSOPT-DCP" Name="AWS_aes_top_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="AWS_aes_top.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="AWS_aes_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="AWS_aes_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="AWS_aes_top_routed_bb.dcp"/>
+  <File Type="BITSTR-LTX" Name="AWS_aes_top.ltx"/>
+  <File Type="BITSTR-MMI" Name="AWS_aes_top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="AWS_aes_top.sysdef"/>
+  <File Type="ROUTE-TIMING-PB" Name="AWS_aes_top_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="AWS_aes_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="AWS_aes_top_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="AWS_aes_top.bit"/>
+  <File Type="BITSTR-RBT" Name="AWS_aes_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="AWS_aes_top.nky"/>
+  <File Type="BG-DRC" Name="AWS_aes_top.drc"/>
+  <File Type="RDI-RDI" Name="AWS_aes_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/qspi/QSPI_slave.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/light_sensor/ad_drive.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/aes_cipher_core/timescale.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/aes_cipher_core/aes_cipher_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/aes_cipher_core/aes_key_expand_128.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/aes_cipher_core/aes_rcon.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/aes_cipher_core/aes_sbox.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/key_128test/key_128test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/light_sensor/light_sensor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/verilog/ram_count/ram_count.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AWS_aes_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AWS_aes_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/AWS_aes.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/AWS_aes.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

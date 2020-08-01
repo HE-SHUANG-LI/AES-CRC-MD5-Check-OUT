@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../AWS_aes.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/sim/blk_mem_gen_1.v" \
+"../../../../AWS_aes.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../AWS_aes.srcs/sources_1/new/AWS_aes_top.v" \
+"../../../../verilog/qspi/QSPI_slave.v" \
+"../../../../verilog/light_sensor/ad_drive.v" \
+"../../../../verilog/aes_cipher_core/aes_cipher_top.v" \
+"../../../../verilog/aes_cipher_core/aes_key_expand_128.v" \
+"../../../../verilog/aes_cipher_core/aes_rcon.v" \
+"../../../../verilog/aes_cipher_core/aes_sbox.v" \
+"../../../../verilog/key_128test/key_128test.v" \
+"../../../../verilog/light_sensor/light_sensor.v" \
+"../../../../verilog/ram_count/ram_count.v" \
+"../../../../AWS_aes.srcs/sim_1/new/AWS_aes_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

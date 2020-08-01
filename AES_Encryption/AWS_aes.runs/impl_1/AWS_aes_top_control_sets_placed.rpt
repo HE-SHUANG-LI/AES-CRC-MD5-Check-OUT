@@ -1,0 +1,85 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Aug  1 13:03:37 2020
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AWS_aes_top_control_sets_placed.rpt
+| Design       : AWS_aes_top
+| Device       : xc7s15
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            2 |
+|      5 |            1 |
+|      8 |            3 |
+|     10 |            1 |
+|     12 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             231 |           90 |
+| No           | No                    | Yes                    |              82 |           35 |
+| No           | Yes                   | No                     |              44 |           16 |
+| Yes          | No                    | No                     |               8 |            5 |
+| Yes          | No                    | Yes                    |             157 |           32 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |                 Enable Signal                 |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-------------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+| ~I_qspi_clk_IBUF_BUFG                           |                                               | I_qspi_cs_IBUF                                   |                1 |              1 |
+|  I_qspi_clk_IBUF_BUFG                           | QSPI_slave_inst/R_o_data[7]_i_1_n_0           | I_qspi_cs_IBUF                                   |                1 |              4 |
+|  I_qspi_clk_IBUF_BUFG                           | QSPI_slave_inst/addr0                         | I_qspi_cs_IBUF                                   |                1 |              4 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out2 | light_sensor_inst/clk_wiz_0_inst/inst/locked  | light_sensor_inst/ad_drive_inst/rst_n            |                1 |              5 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out2 | light_sensor_inst/ad_drive_inst/count1        | light_sensor_inst/ad_drive_inst/rst_n            |                2 |              8 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out3 | light_sensor_inst/ad_drive_inst/ad_data128_en |                                                  |                5 |              8 |
+|  I_qspi_clk_IBUF_BUFG                           | QSPI_slave_inst/R_o_addr                      | I_qspi_cs_IBUF                                   |                1 |              8 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out3 |                                               | light_sensor_inst/ad_drive_inst/rst_n            |                4 |             10 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out3 |                                               | light_sensor_inst/ad_drive_inst/ad_data128_en    |                2 |             12 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out3 |                                               | ram_count_inst/ram_write_en_i_2_n_0              |               13 |             22 |
+|  I_qspi_clk_IBUF_BUFG                           |                                               | I_qspi_cs_IBUF                                   |                9 |             24 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out2 |                                               | light_sensor_inst/ad_drive_inst/rst_n            |                8 |             25 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out3 |                                               | light_sensor_inst/ad_drive_inst/data128_en_reg_1 |               14 |             32 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out3 | aes_cipher_top_inst/aes_done                  | ram_count_inst/ram_write_en_i_2_n_0              |               26 |            128 |
+|  light_sensor_inst/clk_wiz_0_inst/inst/clk_out3 |                                               |                                                  |               90 |            231 |
++-------------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

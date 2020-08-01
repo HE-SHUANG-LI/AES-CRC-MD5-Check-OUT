@@ -1,0 +1,209 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 21:27:06 2020
+# Process ID: 15112
+# Current directory: G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15892 G:\download\AWS_AES加密模块\AWS_aes加密模块\主程序（使用时请避免中文路径）\AWS_aes\AWS_aes.xpr
+# Log file: G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/vivado.log
+# Journal file: G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 821.984 ; gain = 171.574
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'AWS_aes_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AWS_aes_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.srcs/sources_1/new/AWS_aes_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AWS_aes_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/qspi/QSPI_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module QSPI_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/light_sensor/ad_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad_drive
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'data128' is not allowed [G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/light_sensor/ad_drive.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/aes_cipher_core/aes_cipher_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_cipher_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/aes_cipher_core/aes_key_expand_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_key_expand_128
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/aes_cipher_core/aes_rcon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_rcon
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/aes_cipher_core/aes_sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_sbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/key_128test/key_128test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_128test
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'en' is not allowed [G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/key_128test/key_128test.v:29]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'key_data' is not allowed [G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/key_128test/key_128test.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/light_sensor/light_sensor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module light_sensor
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/verilog/ram_count/ram_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.srcs/sim_1/new/AWS_aes_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AWS_aes_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 94413ddf38c945fc9ff03aa0f06a71bf --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot AWS_aes_top_tb_behav xil_defaultlib.AWS_aes_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'o_addr' [G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.srcs/sources_1/new/AWS_aes_top.v:131]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key_128test
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.ad_drive
+Compiling module xil_defaultlib.light_sensor
+Compiling module xil_defaultlib.aes_sbox
+Compiling module xil_defaultlib.aes_rcon
+Compiling module xil_defaultlib.aes_key_expand_128
+Compiling module xil_defaultlib.aes_cipher_top
+Compiling module xil_defaultlib.ram_count
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.QSPI_slave
+Compiling module xil_defaultlib.AWS_aes_top
+Compiling module xil_defaultlib.AWS_aes_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AWS_aes_top_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.sim/sim_1/behav/xsim/xsim.dir/AWS_aes_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 31 21:28:36 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 866.535 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AWS_aes_top_tb_behav -key {Behavioral:sim_1:Functional:AWS_aes_top_tb} -tclbatch {AWS_aes_top_tb.tcl} -view {G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes_top_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes_top_tb_behav.wcfg
+source AWS_aes_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module AWS_aes_top_tb.AWS_aes_top_dut.blk_mem_gen_0_inst.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AWS_aes_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 920.137 ; gain = 53.602
+run all
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v: file does not exist.
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_1 -dir g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {2} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Operating_Mode_B {READ_FIRST} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_1]
+generate_target {instantiation_template} [get_files g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_1'...
+generate_target all [get_files  g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_1'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci]
+launch_runs -jobs 6 blk_mem_gen_1_synth_1
+[Fri Jul 31 21:55:07 2020] Launched blk_mem_gen_1_synth_1...
+Run output will be captured here: G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.runs/blk_mem_gen_1_synth_1/runme.log
+export_simulation -of_objects [get_files g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci] -directory G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.ip_user_files/sim_scripts -ip_user_files_dir G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.ip_user_files -ipstatic_source_dir G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/modelsim} {questa=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/questa} {riviera=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/riviera} {activehdl=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+copy_ip -name blk_mem_gen_1_1 -dir G:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip [get_ips  blk_mem_gen_1]
+CRITICAL WARNING: [IP_Flow 19-1673] Failed to find file 'blk_mem_gen_1.mem' while importing IP 'blk_mem_gen_1_1'. This is a mandatory source file and must exist for import to be successful. Please ensure this file exists.
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files  g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_1_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_1_1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_1_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_1_1'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1_1] }
+export_ip_user_files -of_objects [get_files g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_1.xci]
+launch_runs -jobs 6 blk_mem_gen_1_1_synth_1
+[Fri Jul 31 22:02:42 2020] Launched blk_mem_gen_1_1_synth_1...
+Run output will be captured here: G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.runs/blk_mem_gen_1_1_synth_1/runme.log
+export_simulation -of_objects [get_files g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_1.xci] -directory G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.ip_user_files/sim_scripts -ip_user_files_dir G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.ip_user_files -ipstatic_source_dir G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/modelsim} {questa=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/questa} {riviera=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/riviera} {activehdl=G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_1 g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/download/AWS_AES加密模块/AWS_aes加密模块/主程序（使用时请避免中文路径）/AWS_aes/AWS_aes.runs/blk_mem_gen_1_synth_1
+
+INFO: [Project 1-386] Moving file 'g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/blk_mem_gen_1/blk_mem_gen_1.xci' from fileset 'blk_mem_gen_1' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_1_1 g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_1.xci
+INFO: [Project 1-386] Moving file 'g:/download/AWS_AES/AWS_aes/AWS_aes/AWS_aes.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1_1.xci' from fileset 'blk_mem_gen_1_1' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 22:22:22 2020...
