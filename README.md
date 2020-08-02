@@ -33,7 +33,7 @@
 >images&emsp;&emsp;&emsp;&emsp;&emsp;存放README.md使用的照片  
 
 
-## 资源占用(以下图片如加载失败可见../images/readme.png查看)
+## 资源占用(以下图片如加载失败可见../images/Readme.png查看)
 ![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Source1.png)
 ![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Source2.png)
 ![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Source3.png)
