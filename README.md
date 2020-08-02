@@ -9,7 +9,7 @@ AES即密码学中的高级加密标准（Advanced Encryption Standard），又�
 
 开发环境简介(Arduino环境):
 
-软件: Vivado 2018.3 Arduino1.8.13 
+软件: Vivado 2018.3     Arduino1.8.13 
 
 硬件:	Spartan Edge Accelerator Board(xc7s15ftgb196-1)
 
