@@ -28,7 +28,7 @@
 >  
 >Sourcecode&emsp;&emsp;&emsp;存放项目源代码  
 >  
->images&emsp;&emsp;&emsp;&emsp;&emsp;存放READNE.md使用的照片  
+>images&emsp;&emsp;&emsp;&emsp;&emsp;存放README.md使用的照片  
 
 
 ## 资源占用
