@@ -1,17 +1,3 @@
-
-/*
- * 02LoadConfigBitstream
- * 
- * reading the board_config.ini file.
- * getting the value of overlay_on_boot,
- * and ESP32 loading it
- * 
- * If you want more details, read the README.md
- * 
- * The MIT License (MIT)
- * Copyright (C) 2019  Seeed Technology Co.,Ltd.
- */
-
 // include the library:
 #include <spartan-edge-esp32-boot.h>
 #include "ESP32IniFile.h"
@@ -74,7 +60,7 @@ void setup() {
   esp32Cla.xlibsSstream(buffer);
   SeaTrans.begin();
   uint8_t data2[16] = {0};
-  uint8_t data1 = 10;
+  uint8_t data1 = 10; //读入数据
   delay(100);
   SeaTrans.write(96, data1);
   delay(1000);
