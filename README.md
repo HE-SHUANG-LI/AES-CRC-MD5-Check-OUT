@@ -4,7 +4,7 @@ Xilinx Summer School project of **LSH** and **MYY**
 
 ## 项目概要
 &emsp;&emsp;本项目作品完成基本的AES加密算法在FPGA硬件上的移植,通过Arduino实现了对明文进行AES加密的工作, 并返回对应的密文结果, 成功完成计划目标.  
-&emsp;&emsp;AES算法简介:  
+##### AES算法简介:  
 AES加密算法, 密码学中的高级加密标准(Advanced Encryption Standard). 其是目前使用最为广泛的对称加密算法. AES加密算法也是Rijndael算法的一种特殊实现
 
 ## 开发环境简介(Arduino环境)
@@ -22,9 +22,9 @@ AES加密算法, 密码学中的高级加密标准(Advanced Encryption Standard)
 |组员|LSH|50%|
 
 ## 目录介绍
->ExecttableFiles 存放可直接下载到板卡使⽤的FPGA比特流文件  
->Sourcecode 存放项目源代码  
->images 存放READNE.md使用的照片  
+>ExecttableFiles    存放可直接下载到板卡使⽤的FPGA比特流文件  
+>Sourcecode         存放项目源代码  
+>images             存放READNE.md使用的照片  
 
 
 ## 资源占用
