@@ -7,9 +7,9 @@ Xilinx Summer School project of **LSH** and **MYY**
 
 ## 开发环境简介(Arduino环境):
 ### 软件:
-Vivado 2018.3  
-Arduino1.8.13
+&emsp;&emsp;Vivado 2018.3  
+&emsp;&emsp;Arduino1.8.13
 
 ### 硬件:
-Spartan Edge Accelerator Board(xc7s15ftgb196-1)
+&emsp;&emsp;Spartan Edge Accelerator Board(xc7s15ftgb196-1)
 
