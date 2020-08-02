@@ -19,9 +19,17 @@ Xilinx Summer School project of **LSH** and **MYY**
 |组长|YMY|50%|
 |组员|LSH|50%|
 
-## 资源占用
+## 目录介绍
+>ExecttableFiles 存放可直接下载到板卡使⽤的FPGA比特流文件
+>Sourcecode 存放项目源代码
+>images 存放READNE.md使用的照片
 
+
+## 资源占用
+![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Source1.png)
+![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Source2.png)
+![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Source3.png)
 
 ## 运行效果图
-![硬件]()
-![软件]()
+![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Hardware.png)
+![](https://github.com/He147021251/AES-CRC-MD5-Check-OUT/blob/master/images/Com.png)
