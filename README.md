@@ -16,7 +16,7 @@
 &emsp;&emsp;Arduino 1.8.13
 
 ### 硬件:
-&emsp;&emsp;板卡型号:Spartan Edge Accelerator Board(SEA)
+&emsp;&emsp;板卡型号:Spartan Edge Accelerator Board(SEA)  
 &emsp;&emsp;芯片型号:XC7S15FTGB196-1
 
 ## 成员列表
